@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .header{
+        width: 50vw;
+        display: flex;
+        justify-content: space-between;
+
+
+        .links{
+            display: flex;
+            gap: 50%;
+        }
+    }
+
+    .main{
+        flex: 1 0 auto;
+    }
+}
+
+
+.footer{
+    flex-shrink: 0;
+}
