@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 .First-Page .header {
-  font-size: 45px;
+  font-size: 55px;
   font-family: "Anton", sans-serif;
   color: white;
   width: 50vw;
@@ -27,6 +27,16 @@ body {
 .First-Page .header .links {
   display: flex;
   gap: 50%;
+}
+.First-Page .header .links #ig {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.First-Page .header .links #github {
+  background: linear-gradient(90deg, rgb(99, 199, 237) 2%, rgb(92, 72, 208) 46%, rgb(38, 29, 162) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .First-Page .main {
   flex: 1 0 auto;
@@ -38,7 +48,7 @@ body {
   justify-content: center;
   color: white;
   font-family: "Anton", sans-serif;
-  font-size: 90px;
+  font-size: 100px;
   padding: 100px;
 }
 .First-Page .main .intro #project-button {
@@ -77,6 +87,14 @@ body {
   flex-direction: column;
   gap: 5%;
   margin: 160px;
+}
+.Second-page .project:hover {
+  background-color: #ff4501;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.Second-page .project:hover .tittle .text {
+  color: black;
 }
 .Second-page .project {
   display: flex;

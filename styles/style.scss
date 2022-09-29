@@ -23,7 +23,7 @@ body{
     
     
     .header{
-        font-size: 45px;
+        font-size: 55px;
         font-family: 'Anton', sans-serif;
         color: white;
         width: 50vw;
@@ -32,8 +32,19 @@ body{
 
 
         .links{
+            
             display: flex;
             gap: 50%;
+            #ig{
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            #github{
+                background:linear-gradient(90deg, rgba(99,199,237,1) 2%, rgba(92,72,208,1) 46%, rgba(38,29,162,1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 
@@ -48,7 +59,7 @@ body{
             justify-content: center;
             color: white;
             font-family: 'Anton', sans-serif;
-            font-size: 90px;
+            font-size: 100px;
             padding: 100px;
 
             #project-button{
@@ -105,9 +116,19 @@ body{
     }
 
 
+    .project:hover{
+        background-color: #ff4501;
+        transform: scale(1.1);
+        cursor: pointer;
+        .tittle{
+            .text{
+                color: black;
+            }
+        }
+        
+    }
     .project{
         display: flex;
-     
         flex-direction: column;
         background-color: #ffc300;
         border-radius: 40px;
