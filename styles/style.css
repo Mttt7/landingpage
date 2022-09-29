@@ -99,34 +99,40 @@ body {
 @media only screen and (max-width: 800px) {
   .First-Page .main .intro {
     font-size: 55px;
+    padding: 0;
+    padding-top: 100px;
   }
 }
 @media only screen and (max-width: 540px) {
   .First-Page .main .intro {
-    font-size: 4934px;
+    font-size: 49px;
+    padding: 0;
+    padding-top: 100px;
   }
 }
 @media only screen and (max-width: 420px) {
   .First-Page .main .intro {
     font-size: 38px;
+    padding: 0;
+    padding-top: 100px;
   }
 }
 .First-Page .main .intro #project-button {
   font-size: 60px;
   margin: 50px;
   border: #ffc300 solid 3px;
-  padding: 20px 50px;
+  padding: 10px 50px;
 }
 @media only screen and (max-width: 800px) {
   .First-Page .main .intro #project-button {
     font-size: 30px;
-    padding: 15px 35px;
+    padding: 15px 25px;
   }
 }
 @media only screen and (max-width: 540px) {
   .First-Page .main .intro #project-button {
     font-size: 40px;
-    padding: 13px 15px;
+    padding: 13px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +142,7 @@ body {
   .First-Page .main .intro #project-button {
     width: 70vw;
     font-size: 32px;
-    padding: 10px 10px;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +179,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5%;
-  margin: 160px;
+  margin-top: 160px;
+  padding: 0;
 }
 .Second-page .project:hover {
   background-color: #ff4501;
@@ -201,13 +208,13 @@ body {
 @media only screen and (max-width: 540px) {
   .Second-page .project {
     width: 350px;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 }
 @media only screen and (max-width: 420px) {
   .Second-page .project {
     width: 250px;
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 }
 .Second-page .project .tittle {
@@ -251,6 +258,8 @@ body {
 }
 
 a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: white;
 }
