@@ -49,6 +49,13 @@ body {
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 420px) {
+  .First-Page .header {
+    font-size: 32px;
+    width: 90vw;
+    justify-content: space-around;
+  }
+}
 .First-Page .header .links {
   display: flex;
   gap: 50%;
@@ -96,7 +103,12 @@ body {
 }
 @media only screen and (max-width: 540px) {
   .First-Page .main .intro {
-    font-size: 42px;
+    font-size: 4934px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .First-Page .main .intro {
+    font-size: 38px;
   }
 }
 .First-Page .main .intro #project-button {
@@ -113,17 +125,32 @@ body {
 }
 @media only screen and (max-width: 540px) {
   .First-Page .main .intro #project-button {
-    font-size: 29px;
+    font-size: 40px;
     padding: 13px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-.First-Page .main .intro #project-button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  font-size: 60px;
-  margin: 50px;
-  padding: 20px 50px;
-  color: #ffc300;
+@media only screen and (max-width: 420px) {
+  .First-Page .main .intro #project-button {
+    width: 70vw;
+    font-size: 32px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .First-Page .main .intro #project-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    font-size: 60px;
+    margin: 50px;
+    padding: 20px 50px;
+    color: #ffc300;
+  }
 }
 .First-Page .main ul {
   display: flex;
@@ -156,6 +183,12 @@ body {
 .Second-page .project:hover .tittle .text {
   color: black;
 }
+.Second-page li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .Second-page .project {
   display: flex;
   flex-direction: column;
@@ -171,6 +204,12 @@ body {
     padding: 10px 20px;
   }
 }
+@media only screen and (max-width: 420px) {
+  .Second-page .project {
+    width: 250px;
+    padding: 10px 20px;
+  }
+}
 .Second-page .project .tittle {
   font-family: "Anton", sans-serif;
   color: white;
@@ -182,6 +221,11 @@ body {
 .Second-page .project .tittle .text {
   font-size: 40px;
   flex: 1 0;
+}
+@media only screen and (max-width: 420px) {
+  .Second-page .project .tittle .text {
+    font-size: 32px;
+  }
 }
 .Second-page #ending-text {
   font-family: "Anton", sans-serif;

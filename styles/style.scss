@@ -55,6 +55,11 @@ body{
             justify-content: space-around;
 
         }
+        @media only screen and (max-width:420px) {
+            font-size: 32px;
+            width: 90vw;
+            justify-content: space-around;
+        }
 
 
         .links{
@@ -108,8 +113,12 @@ body{
     
             }
             @media only screen and (max-width:540px) {
-                font-size: 42px;
+                font-size: 4934px;
     
+            }
+            @media only screen and (max-width:420px) {
+                font-size: 38px;
+                
             }
     
             #project-button{
@@ -123,14 +132,27 @@ body{
         
                 }
                 @media only screen and (max-width:540px) {
-                    font-size: 29px;
+                    font-size: 40px;
                     padding: 13px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-        
+                @media only screen and (max-width:420px) {
+                    width: 70vw;
+                    font-size: 32px;
+                    padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
             #project-button:hover{
                
                 
+                
+                    @media only screen and (min-width:900px) {
+                        
                     transform: scale(1.1);
                     cursor:pointer;
                     font-size: 60px;
@@ -139,8 +161,7 @@ body{
                     padding: 20px 50px;
                     color:#ffc300;
         
-                
-                
+                    }
             }
         }
 
@@ -193,6 +214,12 @@ body{
         }
         
     }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .project{
         display: flex;
         flex-direction: column;
@@ -207,6 +234,12 @@ body{
             width: 350px;
             padding: 10px 20px;
         }
+        @media only screen and (max-width:420px) {
+            
+            width: 250px;
+            padding: 10px 20px;
+        }
+        
         
         .tittle{
             font-family: 'Anton', sans-serif;
@@ -219,6 +252,10 @@ body{
             .text{
                 font-size: 40px;
                 flex: 1 0;
+                @media only screen and (max-width:420px) {
+            
+                    font-size: 32px;
+                }
                 
             }
             
