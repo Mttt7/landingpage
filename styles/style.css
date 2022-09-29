@@ -28,12 +28,19 @@ body {
      object-fit: cover;
 }
 .First-Page .header {
-  font-size: 55px;
+  font-size: 62px;
   font-family: "Anton", sans-serif;
   color: white;
   width: 50vw;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .First-Page .header {
+    font-size: 40px;
+    width: 85vw;
+    justify-content: space-around;
+  }
 }
 .First-Page .header .links {
   display: flex;
@@ -57,6 +64,11 @@ body {
 .First-Page .header .links #github:hover {
   transform: scale(1.1);
 }
+@media only screen and (max-width: 800px) {
+  .First-Page .header .links {
+    gap: 10%;
+  }
+}
 .First-Page .main {
   flex: 1 0 auto;
 }
@@ -70,11 +82,22 @@ body {
   font-size: 100px;
   padding: 100px;
 }
+@media only screen and (max-width: 800px) {
+  .First-Page .main .intro {
+    font-size: 55px;
+  }
+}
 .First-Page .main .intro #project-button {
   font-size: 60px;
   margin: 50px;
   border: #ffc300 solid 3px;
   padding: 20px 50px;
+}
+@media only screen and (max-width: 800px) {
+  .First-Page .main .intro #project-button {
+    font-size: 30px;
+    padding: 15px 35px;
+  }
 }
 .First-Page .main .intro #project-button:hover {
   transform: scale(1.1);

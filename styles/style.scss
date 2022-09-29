@@ -36,12 +36,19 @@ body{
     
     
     .header{
-        font-size: 55px;
+        font-size: 62px;
         font-family: 'Anton', sans-serif;
         color: white;
         width: 50vw;
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width:1200px) {
+            font-size: 40px;
+            width: 85vw;
+            justify-content: space-around;
+
+        }
 
 
         .links{
@@ -49,10 +56,12 @@ body{
             display: flex;
             gap: 50%;
             #ig{
+                
                 cursor: pointer;
                 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                
             }
             #github{
                 cursor: pointer;
@@ -66,6 +75,9 @@ body{
             }
             #github:hover{
                 transform: scale(1.1);
+            }
+            @media only screen and (max-width:800px) {
+                gap:10%;
             }
         }
     }
@@ -84,20 +96,37 @@ body{
             font-size: 100px;
             padding: 100px;
 
+            @media only screen and (max-width:800px) {
+                font-size: 55px;
+                
+    
+            }
+    
             #project-button{
                 font-size: 60px;
                 margin: 50px;
                 border: #ffc300 solid 3px;
                 padding: 20px 50px;
+                @media only screen and (max-width:800px) {
+                    font-size: 30px;
+                    padding: 15px 35px;
+        
+                }
+        
             }
             #project-button:hover{
-                transform: scale(1.1);
-                cursor:pointer;
-                font-size: 60px;
-                margin: 50px;
+               
                 
-                padding: 20px 50px;
-                color:#ffc300;
+                    transform: scale(1.1);
+                    cursor:pointer;
+                    font-size: 60px;
+                    margin: 50px;
+                    
+                    padding: 20px 50px;
+                    color:#ffc300;
+        
+                
+                
             }
         }
 
