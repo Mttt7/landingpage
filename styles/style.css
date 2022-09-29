@@ -41,6 +41,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.First-Page .header .links #ig:hover {
+  transform: scale(1.1);
+}
+.First-Page .header .links #github:hover {
+  transform: scale(1.1);
+}
 .First-Page .main {
   flex: 1 0 auto;
 }
@@ -117,6 +123,11 @@ body {
 .Second-page .project .tittle .text {
   font-size: 40px;
   flex: 1 0;
+}
+.Second-page #ending-text {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 48px;
 }
 
 .snap-container {
