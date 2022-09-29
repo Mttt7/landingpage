@@ -1,8 +1,9 @@
-html {
-  scroll-behavior: smooth;
+html, body {
+  scroll-behavior: smooth !important;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   background: black;
@@ -29,11 +30,13 @@ body {
   gap: 50%;
 }
 .First-Page .header .links #ig {
+  cursor: pointer;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .First-Page .header .links #github {
+  cursor: pointer;
   background: linear-gradient(90deg, rgb(99, 199, 237) 2%, rgb(92, 72, 208) 46%, rgb(38, 29, 162) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,7 +122,8 @@ body {
 .snap-container {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  overflow: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .snap-element {
@@ -135,4 +139,13 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+   supported by Chrome, Edge, Opera and Firefox */
 }/*# sourceMappingURL=style.css.map */
