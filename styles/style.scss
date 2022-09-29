@@ -49,6 +49,12 @@ body{
             justify-content: space-around;
 
         }
+        @media only screen and (max-width:540px) {
+            font-size: 30px;
+            width: 85vw;
+            justify-content: space-around;
+
+        }
 
 
         .links{
@@ -101,6 +107,10 @@ body{
                 
     
             }
+            @media only screen and (max-width:540px) {
+                font-size: 42px;
+    
+            }
     
             #project-button{
                 font-size: 60px;
@@ -111,6 +121,10 @@ body{
                     font-size: 30px;
                     padding: 15px 35px;
         
+                }
+                @media only screen and (max-width:540px) {
+                    font-size: 29px;
+                    padding: 13px 15px;
                 }
         
             }
@@ -143,6 +157,7 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        
                     }
                 }
             }
@@ -181,11 +196,17 @@ body{
     .project{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        
         background-color: #ffc300;
         border-radius: 40px;
         padding: 10px 90px;
         width: 350px;
         
+        @media only screen and (max-width:540px) {
+            width: 350px;
+            padding: 10px 20px;
+        }
         
         .tittle{
             font-family: 'Anton', sans-serif;
@@ -193,10 +214,12 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             
             .text{
                 font-size: 40px;
                 flex: 1 0;
+                
             }
             
         }

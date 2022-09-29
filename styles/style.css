@@ -42,6 +42,13 @@ body {
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 540px) {
+  .First-Page .header {
+    font-size: 30px;
+    width: 85vw;
+    justify-content: space-around;
+  }
+}
 .First-Page .header .links {
   display: flex;
   gap: 50%;
@@ -87,6 +94,11 @@ body {
     font-size: 55px;
   }
 }
+@media only screen and (max-width: 540px) {
+  .First-Page .main .intro {
+    font-size: 42px;
+  }
+}
 .First-Page .main .intro #project-button {
   font-size: 60px;
   margin: 50px;
@@ -97,6 +109,12 @@ body {
   .First-Page .main .intro #project-button {
     font-size: 30px;
     padding: 15px 35px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .First-Page .main .intro #project-button {
+    font-size: 29px;
+    padding: 13px 15px;
   }
 }
 .First-Page .main .intro #project-button:hover {
@@ -141,10 +159,17 @@ body {
 .Second-page .project {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #ffc300;
   border-radius: 40px;
   padding: 10px 90px;
   width: 350px;
+}
+@media only screen and (max-width: 540px) {
+  .Second-page .project {
+    width: 350px;
+    padding: 10px 20px;
+  }
 }
 .Second-page .project .tittle {
   font-family: "Anton", sans-serif;
@@ -152,6 +177,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .Second-page .project .tittle .text {
   font-size: 40px;
