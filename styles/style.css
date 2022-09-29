@@ -6,12 +6,15 @@ body {
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: orange;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .container .header {
+  font-size: 45px;
+  font-family: "Anton", sans-serif;
+  color: white;
   width: 50vw;
   display: flex;
   justify-content: space-between;
@@ -22,6 +25,60 @@ body {
 }
 .container .main {
   flex: 1 0 auto;
+}
+.container .main .intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 90px;
+  padding: 100px;
+}
+.container .main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .main ul li .tittle .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc300;
+  border-radius: 40px;
+  padding: 10px 90px;
+  /* 
+     .left-side{
+
+          .photo{
+             border: 5px solid white;
+             border-radius: 10px;
+             margin: 20px; 
+              img{
+                  height: 400px;
+
+              }
+          }
+      }
+  */
+}
+.project .tittle {
+  font-family: "Anton", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.project .tittle .text {
+  font-size: 40px;
+  flex: 1 0;
+}
+.project .tittle .link {
+  flex-shrink: 0;
 }
 
 .footer {
