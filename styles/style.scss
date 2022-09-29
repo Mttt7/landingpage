@@ -1,15 +1,26 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
+    
     margin: 0;
     padding: 0;
-}
-.container{
-    height: 100vh;
-    width: 100vw;
     background: black;
+    
+}
+
+.First-Page{
+    scroll-snap-align:start;
+    margin: 0;
+    margin-bottom: 30px;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    
     
     .header{
         font-size: 45px;
@@ -32,12 +43,29 @@ body{
 
         .intro{
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             color: white;
             font-family: 'Anton', sans-serif;
             font-size: 90px;
             padding: 100px;
+
+            #project-button{
+                font-size: 60px;
+                margin: 50px;
+                border: #ffc300 solid 3px;
+                padding: 20px 50px;
+            }
+            #project-button:hover{
+                transform: scale(1.1);
+                cursor:pointer;
+                font-size: 60px;
+                margin: 50px;
+                
+                padding: 20px 50px;
+                color:#ffc300;
+            }
         }
 
 
@@ -61,50 +89,67 @@ body{
 }
 
 
-.project{
+.Second-page{
     
     display: flex;
     flex-direction: column;
+    align-items: center;
     
-    background-color: #ffc300;
-    border-radius: 40px;
-    padding: 10px 90px;
-   
-    
-    
+    .all-projects{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:5%;
+        margin: 160px;
+        
+    }
 
-   /* 
-   .left-side{
-       
-        .photo{
-           border: 5px solid white;
-           border-radius: 10px;
-           margin: 20px; 
-            img{
-                height: 400px;
-                
+
+    .project{
+        display: flex;
+     
+        flex-direction: column;
+        background-color: #ffc300;
+        border-radius: 40px;
+        padding: 10px 90px;
+        width: 350px;
+        
+        
+        .tittle{
+            font-family: 'Anton', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .text{
+                font-size: 40px;
+                flex: 1 0;
             }
+            
         }
     }
-*/
-.tittle{
-    font-family: 'Anton', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
+}
+
+
+.snap-container{
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+.snap-element{
+    scroll-snap-align: start;
+}
+
+.snap-container,
+  .snap-element {
+    max-width: 100vw ;
     
-    .text{
-        font-size: 40px;
-        flex: 1 0;
-    }
-    .link{
-        flex-shrink: 0;
-    }
-}
+    height:100vh ;
+  }
+  
 
-}
-
-
-.footer{
-    flex-shrink: 0;
+a{
+   text-decoration: none;
+    color:white;
 }
