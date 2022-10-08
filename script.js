@@ -4,6 +4,7 @@ const github=document.querySelector("#github")
 const calculator=document.querySelector("#calculator")
 const sketchbook=document.querySelector("#sketchbook")
 const rps=document.querySelector("#rps")
+const isprime = document.querySelector("#isprime")
 
 ig.onclick = ()=>{
     window.open("https://www.instagram.com/mtt.jpeg/")
@@ -15,6 +16,10 @@ github.onclick = ()=>{
 calculator.onclick = ()=>{
     window.open("https://mttt7.github.io/calculator/")
 }
+isprime.onclick=() =>{
+    window.open("https://mttt7.github.io/prime-numbers")
+}
+
 sketchbook.onclick = ()=>{
     window.open("https://mttt7.github.io/Etch-a-Sketch/")
 }
