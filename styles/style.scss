@@ -236,6 +236,15 @@ body{
         border-radius: 40px;
         padding: 10px 90px;
         width: 350px;
+
+
+        .icons{
+            display: flex;
+            img{
+                width: 25px;
+            }
+        }
+
         
         @media only screen and (max-width:540px) {
             width: 350px;
@@ -252,7 +261,7 @@ body{
             font-family: 'Anton', sans-serif;
             color: white;
             display: flex;
-            flex-direction: column;
+            gap: 15px;
             align-items: center;
             justify-content: center;
             

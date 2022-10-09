@@ -205,6 +205,12 @@ body {
   padding: 10px 90px;
   width: 350px;
 }
+.Second-page .project .icons {
+  display: flex;
+}
+.Second-page .project .icons img {
+  width: 25px;
+}
 @media only screen and (max-width: 540px) {
   .Second-page .project {
     width: 350px;
@@ -221,7 +227,7 @@ body {
   font-family: "Anton", sans-serif;
   color: white;
   display: flex;
-  flex-direction: column;
+  gap: 15px;
   align-items: center;
   justify-content: center;
 }
