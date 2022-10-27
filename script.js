@@ -5,6 +5,7 @@ const calculator=document.querySelector("#calculator")
 const sketchbook=document.querySelector("#sketchbook")
 const rps=document.querySelector("#rps")
 const isprime = document.querySelector("#isprime")
+const admin = document.querySelector("#admin")
 
 ig.onclick = ()=>{
     window.open("https://www.instagram.com/mtt.jpeg/")
@@ -25,6 +26,10 @@ sketchbook.onclick = ()=>{
 }
 rps.onclick = ()=>{
     window.open("https://mttt7.github.io/Rock-Paper_Scissors/")
+}
+
+admin.onclick = ()=>{
+    window.open("https://mttt7.github.io/admin-dashboard/")
 }
 
 
