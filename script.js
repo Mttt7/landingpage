@@ -6,11 +6,3 @@ const sketchbook=document.querySelector("#sketchbook")
 const rps=document.querySelector("#rps")
 const isprime = document.querySelector("#isprime")
 const admin = document.querySelector("#admin")
-
-
-
-
-
-
-
-

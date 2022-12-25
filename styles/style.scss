@@ -230,12 +230,14 @@ body{
     }
     .project{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        //flex-direction: column;
         
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
         background-color: #ffc300;
         border-radius: 40px;
-        padding: 10px 90px;
+        padding: 1rem 4rem;
         width: 350px;
 
 
@@ -248,15 +250,11 @@ body{
 
         
         @media only screen and (max-width:540px) {
+            //flex-direction: column;
             width: 350px;
             padding: 10px 15px;
         }
-        @media only screen and (max-width:420px) {
-            
-            width: 250px;
-            padding: 10px 10px;
-        }
-        
+       
         
         .tittle{
             font-family: 'Anton', sans-serif;
@@ -327,4 +325,17 @@ a{
 
 .Second-page{
     height: 150vh;
+}
+
+#rps{
+    .tittle{
+        .text{
+            @media only screen and (max-width:440px) {
+            
+                font-size: 1.7rem;
+            }
+            
+            font-size: 2rem;
+        }
+    }
 }
